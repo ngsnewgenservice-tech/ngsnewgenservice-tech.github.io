@@ -147,3 +147,5 @@ footer .copy { margin-inline-start: auto; }
 .legal .date { color: var(--muted); margin-top: 0; }
 .legal h2 { font-size: 21px; margin-top: 32px; }
 .legal li { margin: 6px 0; }
+.howto { margin: 14px 0 0; font-size: 15px; }
+.howto a { font-weight: 600; }

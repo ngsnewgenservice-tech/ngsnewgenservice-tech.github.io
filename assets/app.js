@@ -38,12 +38,17 @@
         el.href = cfg.chromeStoreUrl;
         el.target = "_blank";
         el.rel = "noopener";
+      } else if (cfg.downloadUrl) {
+        if (el.dataset.i18n === "cta_install") el.textContent = t.cta_download || en.cta_download;
+        el.href = cfg.downloadUrl;
+        el.setAttribute("download", "");
       } else {
         el.textContent = t.cta_soon || en.cta_soon;
         el.classList.add("disabled");
         el.removeAttribute("href");
       }
     });
+    document.querySelectorAll(".js-howto").forEach(function (el) { el.hidden = !!cfg.chromeStoreUrl || !cfg.downloadUrl; });
     document.querySelector("#lang").value = code;
   }
 

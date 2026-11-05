@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PolySubs – Multilingual Subtitles & Language Learning</title>
+  <meta name="description" content="Watch YouTube with subtitles in several languages at once. Click any word to translate it, take quick quizzes and practise speaking to learn languages faster.">
+  <meta name="keywords" content="learn languages, YouTube subtitles, dual subtitles, multilingual subtitles, language learning extension, Chrome extension, vocabulary quiz">
+  <link rel="canonical" href="https://ngsnewgenservice-tech.github.io/">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PolySubs – Multilingual Subtitles & Language Learning">
+  <meta property="og:description" content="Subtitles in several languages at once, click-to-translate words and end-of-video quizzes.">
+  <meta property="og:url" content="https://ngsnewgenservice-tech.github.io/">
+  <meta property="og:image" content="https://ngsnewgenservice-tech.github.io/assets/icon.svg">
+  <link rel="alternate" hreflang="x-default" href="https://ngsnewgenservice-tech.github.io/">
+  <link rel="alternate" hreflang="en" href="https://ngsnewgenservice-tech.github.io/?lang=en">
+  <link rel="alternate" hreflang="ar" href="https://ngsnewgenservice-tech.github.io/?lang=ar">
+  <link rel="alternate" hreflang="es" href="https://ngsnewgenservice-tech.github.io/?lang=es">
+  <link rel="alternate" hreflang="fr" href="https://ngsnewgenservice-tech.github.io/?lang=fr">
+  <link rel="alternate" hreflang="pt" href="https://ngsnewgenservice-tech.github.io/?lang=pt">
+  <link rel="alternate" hreflang="zh" href="https://ngsnewgenservice-tech.github.io/?lang=zh">
+  <link rel="alternate" hreflang="hi" href="https://ngsnewgenservice-tech.github.io/?lang=hi">
+  <link rel="alternate" hreflang="ru" href="https://ngsnewgenservice-tech.github.io/?lang=ru">
+  <link rel="alternate" hreflang="id" href="https://ngsnewgenservice-tech.github.io/?lang=id">
+  <link rel="alternate" hreflang="de" href="https://ngsnewgenservice-tech.github.io/?lang=de">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PolySubs",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Chrome",
+    "description": "Chrome extension that shows YouTube subtitles in several languages at once, with click-to-translate words and end-of-video quizzes for language learning.",
+    "offers": [
+      { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Premium monthly", "price": "3", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Premium yearly", "price": "25", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="./"><img src="assets/icon.svg" alt="">PolySubs</a>
+      <nav class="links">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <label class="lang-pick">
+        <span class="sr" hidden data-i18n="lang_label">Language</span>
+        <select id="lang" aria-label="Language"></select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="tag" data-i18n="hero_tag">Language learning on YouTube</span>
+          <h1 data-i18n="hero_title">Learn several languages from every video you watch</h1>
+          <p class="sub" data-i18n="hero_sub">PolySubs shows YouTube subtitles in multiple languages at once.</p>
+          <div class="cta-row">
+            <a class="btn primary js-install" href="#" data-i18n="cta_install">Add to Chrome — free</a>
+            <a class="btn ghost" href="#pricing" data-i18n="hero_cta2">See pricing</a>
+          </div>
+        </div>
+        <div class="demo" dir="ltr" aria-hidden="true">
+          <div class="screen">
+            <div class="box">
+              <div class="ln o"><span class="word">Practice</span> makes perfect.</div>
+              <div class="ln a">التمرين يصنع الإتقان.</div>
+              <div class="ln b">La práctica hace al maestro.</div>
+              <div class="ln c">C'est en forgeant qu'on devient forgeron.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="features">
+      <div class="wrap">
+        <h2 class="title" data-i18n="feat_title">Built for learning, not just translating</h2>
+        <div class="grid">
+          <div class="card"><div class="ico">🌍</div><h3 data-i18n="f1_t"></h3><p data-i18n="f1_d"></p></div>
+          <div class="card"><div class="ico">👆</div><h3 data-i18n="f2_t"></h3><p data-i18n="f2_d"></p></div>
+          <div class="card"><div class="ico">✅</div><h3 data-i18n="f3_t"></h3><p data-i18n="f3_d"></p></div>
+          <div class="card"><div class="ico">🎤</div><h3 data-i18n="f4_t"></h3><p data-i18n="f4_d"></p></div>
+          <div class="card"><div class="ico">🔊</div><h3 data-i18n="f5_t"></h3><p data-i18n="f5_d"></p></div>
+          <div class="card"><div class="ico">📈</div><h3 data-i18n="f6_t"></h3><p data-i18n="f6_d"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block soft">
+      <div class="wrap">
+        <h2 class="title" data-i18n="how_title">Start in three steps</h2>
+        <div class="steps">
+          <div class="card"><p data-i18n="s1"></p></div>
+          <div class="card"><p data-i18n="s2"></p></div>
+          <div class="card"><p data-i18n="s3"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="pricing">
+      <div class="wrap">
+        <h2 class="title" data-i18n="price_title">Simple pricing</h2>
+        <p class="lead" data-i18n="price_sub"></p>
+        <div class="plans">
+          <div class="card plan">
+            <h3 data-i18n="free_name">Free</h3>
+            <p class="price">$0 <small data-i18n="free_per">forever</small></p>
+            <p class="price-alt">&nbsp;</p>
+            <ul>
+              <li data-i18n="free_1"></li>
+              <li data-i18n="free_2"></li>
+              <li data-i18n="free_3"></li>
+              <li data-i18n="free_4"></li>
+            </ul>
+            <a class="btn ghost full js-install" href="#" data-i18n="cta_install">Add to Chrome — free</a>
+          </div>
+          <div class="card plan pro">
+            <span class="badge" data-i18n="pro_badge">First month for $1</span>
+            <h3 data-i18n="pro_name">Premium</h3>
+            <p class="price">$3 <small data-i18n="per_month">/ month</small></p>
+            <p class="price-alt" data-i18n="pro_year">or $25 per year (save 30%)</p>
+            <ul>
+              <li data-i18n="pro_1"></li>
+              <li data-i18n="pro_2"></li>
+              <li data-i18n="pro_3"></li>
+              <li data-i18n="pro_4"></li>
+            </ul>
+            <a class="btn primary full js-install" href="#" data-i18n="pro_btn">Upgrade inside the extension</a>
+          </div>
+        </div>
+        <p class="note" data-i18n="price_note"></p>
+      </div>
+    </section>
+
+    <section class="block soft" id="faq">
+      <div class="wrap">
+        <h2 class="title" data-i18n="faq_title">Questions</h2>
+        <div class="faq">
+          <details><summary data-i18n="q1"></summary><p data-i18n="a1"></p></details>
+          <details><summary data-i18n="q2"></summary><p data-i18n="a2"></p></details>
+          <details><summary data-i18n="q3"></summary><p data-i18n="a3"></p></details>
+          <details><summary data-i18n="q4"></summary><p data-i18n="a4"></p></details>
+          <details><summary data-i18n="q5"></summary><p data-i18n="a5"></p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy.html" data-i18n="ft_privacy">Privacy</a>
+      <a href="terms.html" data-i18n="ft_terms">Terms</a>
+      <a href="refund.html" data-i18n="ft_refund">Refunds</a>
+      <a class="js-mail" href="#" data-i18n="ft_contact">Contact</a>
+      <span class="copy">© 2026 PolySubs</span>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

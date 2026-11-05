@@ -4,6 +4,6 @@ window.POLYSUBS_CONFIG = {
   // install buttons then show "Coming soon".
   chromeStoreUrl: "",
   // Direct download used until the extension is in a store.
-  downloadUrl: "downloads/polysubs-4.0.2.zip",
+  downloadUrl: "downloads/polysubs-4.0.3.zip",
   contactEmail: "ngs.newgenservice@gmail.com"
 };

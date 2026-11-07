@@ -48,6 +48,17 @@
         el.removeAttribute("href");
       }
     });
+    // Premium button: goes to the checkout, never to the download.
+    document.querySelectorAll(".js-pro").forEach(function (el) {
+      if (cfg.checkoutUrl) {
+        el.href = cfg.checkoutUrl; el.target = "_blank"; el.rel = "noopener";
+        el.classList.remove("disabled");
+      } else {
+        el.textContent = t.pro_soon || en.pro_soon;
+        el.classList.add("disabled");
+        el.removeAttribute("href");
+      }
+    });
     document.querySelectorAll(".js-howto").forEach(function (el) { el.hidden = !!cfg.chromeStoreUrl || !cfg.downloadUrl; });
     document.querySelector("#lang").value = code;
   }
